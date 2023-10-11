@@ -1,13 +1,14 @@
 name: msvc-dev-cmd
 
 on:
-  pull_request:
-  push:
-    branches:
-      - master
-      - release/*
-  schedule:
-    - cron: '0 6 * * *'
+  workflow_dispatch:
+#  pull_request:
+#  push:
+#    branches:
+#      - master
+#      - release/*
+#  schedule:
+#    - cron: '0 6 * * *'
 
 jobs:
   test:
