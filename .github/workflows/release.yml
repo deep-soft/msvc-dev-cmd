@@ -1,11 +1,12 @@
 name: msvc-dev-cmd (release)
 
 on:
-  push:
-    branches:
-      - release/*
-  schedule:
-    - cron: '0 6 * * *'
+  workflow_dispatch:
+#  push:
+#    branches:
+#      - release/*
+#  schedule:
+#    - cron: '0 6 * * *'
 
 jobs:
   test:
